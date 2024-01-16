@@ -1,1 +1,2 @@
-# definition-of-done
+# Easy GitHub GPT
+
