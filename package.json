@@ -12,11 +12,12 @@
   "devDependencies": {
     "@types/node": "^20.10.8",
     "smee-client": "^2.0.0",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "nock": "^13.0.5"
   },
   "dependencies": {
     "@octokit/rest": "^20.0.2",
     "openai": "^4.24.3",
-    "probot": "^12.3.3"
+    "probot": "^12.2.4"
   }
 }

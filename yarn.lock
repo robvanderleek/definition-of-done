@@ -874,7 +874,7 @@ debug@2.6.9:
   dependencies:
     ms "2.0.0"
 
-debug@4, debug@^4.3.1:
+debug@4, debug@^4.1.0, debug@^4.3.1:
   version "4.3.4"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.4.tgz#1319f6579357f2338d3337d2cdd4914bb5dcc865"
   integrity sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==
@@ -1343,6 +1343,11 @@ json-parse-better-errors@^1.0.1:
   resolved "https://registry.yarnpkg.com/json-parse-better-errors/-/json-parse-better-errors-1.0.2.tgz#bb867cfb3450e69107c131d1c514bab3dc8bcaa9"
   integrity sha512-mrqyZKfX5EhL7hvqcV6WG1yYjnjeuYDzDhhcAAUrq8Po85NBQBJP+ZDUT75qZQ98IkUoBqdkExkukOU7Ts2wrw==
 
+json-stringify-safe@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz#1296a2d58fd45f19a0f6ce01d65701e2c735b6eb"
+  integrity sha512-ZClg6AaYvamvYEE82d3Iyd3vSSIjQ+odgjaTzRuO3s7toCdFKczob2i0zCh7JE8kWn17yvAWhUVxvqGwUalsRA==
+
 jsonwebtoken@^9.0.2:
   version "9.0.2"
   resolved "https://registry.yarnpkg.com/jsonwebtoken/-/jsonwebtoken-9.0.2.tgz#65ff91f4abef1784697d40952bb1998c504caaf3"
@@ -1549,6 +1554,15 @@ neo-async@^2.6.2:
   version "2.6.2"
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
+
+nock@^13.0.5:
+  version "13.5.0"
+  resolved "https://registry.yarnpkg.com/nock/-/nock-13.5.0.tgz#82cd33b0dba6095d3f5a28d0ff2edac970fa05ec"
+  integrity sha512-9hc1eCS2HtOz+sE9W7JQw/tXJktg0zoPSu48s/pYe73e25JW9ywiowbqnUSd7iZPeVawLcVpPZeZS312fwSY+g==
+  dependencies:
+    debug "^4.1.0"
+    json-stringify-safe "^5.0.1"
+    propagate "^2.0.0"
 
 node-domexception@1.0.0:
   version "1.0.0"
@@ -1759,7 +1773,7 @@ pkg-conf@^3.1.0:
     find-up "^3.0.0"
     load-json-file "^5.2.0"
 
-probot@^12.3.3:
+probot@^12.2.4:
   version "12.3.3"
   resolved "https://registry.yarnpkg.com/probot/-/probot-12.3.3.tgz#f5a430cd34efa27d9abb2318417be029bfe3d511"
   integrity sha512-cdtKd+xISzi8sw6++BYBXleRknCA6hqUMoHj/sJqQBrjbNxQLhfeFCq9O2d0Z4eShsy5YFRR3MWwDKJ9uAE0CA==
@@ -1807,6 +1821,11 @@ process@^0.11.10:
   version "0.11.10"
   resolved "https://registry.yarnpkg.com/process/-/process-0.11.10.tgz#7332300e840161bda3e69a1d1d91a7d4bc16f182"
   integrity sha512-cdGef/drWFoydD1JsMzuFf8100nZl+GT+yacc2bEced5f9Rjk4z+WtFUTBu9PhOi9j/jfmBPu0mMEY4wIdAF8A==
+
+propagate@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/propagate/-/propagate-2.0.1.tgz#40cdedab18085c792334e64f0ac17256d38f9a45"
+  integrity sha512-vGrhOavPSTz4QVNuBNdcNXePNdNMaO1xj9yBeH1ScQPjk/rhg9sSlCXPhMkFuaNNW/syTvYqsnbIJxMBfRbbag==
 
 proxy-addr@~2.0.7:
   version "2.0.7"

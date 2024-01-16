@@ -3,6 +3,7 @@
     "src/**/*"
   ],
   "compilerOptions": {
+    "types" : ["node"],
     "rootDir": "src",
     "outDir": "dist",
     "strict": true,
