@@ -1,6 +1,7 @@
 import {Octokit} from "@octokit/rest";
 import OpenAI from "openai";
 import path from "node:path";
+import {executeGPT} from "./openai";
 
 const ocktokit = new Octokit({
     auth: process.env.DEFINITION_OF_DONE_GITHUB_TOKEN
@@ -74,20 +75,6 @@ async function getPullRequestDiff(owner: string, repo: string, pull_number: numb
     // console.log(largest);
 
     const diff = await getPullRequestDiff(args[0], args[1], parseInt(args[2]));
-
-    const openAI = new OpenAI({apiKey: process.env.OPENAI_API_KEY});
-    console.log('checking...');
-    const result = await openAI.chat.completions.create({
-        messages: [{
-            role: 'system',
-            content: doSummary
-        }, {
-            role: 'user',
-            content: `Please summarize this code patch:\n${diff}\n`
-        }],
-        //model: 'gpt-3.5-turbo-16k'
-        model: 'gpt-4-1106-preview',
-        max_tokens: 1000
-    });
-    console.log(result.choices[0].message.content);
+    const result = await executeGPT(doReview, `Please summarize this code patch:\n${diff}\n`);
+    console.log(result);
 })();

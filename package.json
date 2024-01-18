@@ -1,7 +1,7 @@
 {
-  "name": "definition-of-done",
+  "name": "easy-github-gpt",
   "version": "1.0.0",
-  "description": "Automate checking your Definition of Done",
+  "description": "Quickly integrate GitHub and the OpenAI API",
   "author": "robvanderleek@gmail.com",
   "license": "ISC",
   "scripts": {
